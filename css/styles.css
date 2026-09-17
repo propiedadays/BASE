@@ -210,6 +210,16 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--ink-900);
 }
 
+.cta-banner .btn-ghost {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.cta-banner .btn-ghost:hover {
+  background: #fff;
+  color: var(--ink-900);
+}
+
 .icon {
   width: 18px;
   height: 18px;
