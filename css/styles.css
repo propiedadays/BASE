@@ -364,6 +364,14 @@ button { font-family: inherit; cursor: pointer; }
   background: repeating-linear-gradient(118deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 34px);
 }
 
+.hero-media .photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero-media::after {
   content: "";
   position: absolute;
@@ -552,6 +560,16 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .project-card .media img { width: 40px; opacity: 0.85; }
+
+.project-card .media img.photo {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  object-fit: cover;
+  transition: transform var(--dur-image) var(--ease-standard);
+}
+
+.project-card:hover .media img.photo { transform: scale(1.03); }
 
 .project-card .body { padding: 18px 20px; }
 
@@ -980,10 +998,26 @@ button { font-family: inherit; cursor: pointer; }
 
 .quote-hero-panel svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 
+.quote-hero-panel .photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote-hero-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(15, 19, 28, 0.8) 0%, rgba(15, 19, 28, 0.05) 65%);
+}
+
 .quote-hero-panel .hp-label {
   position: absolute;
   left: 16px;
   bottom: 12px;
+  z-index: 1;
   font-size: 9px;
   letter-spacing: 0.28em;
   color: var(--gold-400);

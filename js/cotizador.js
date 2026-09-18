@@ -132,10 +132,8 @@
     var s = stepShell("Cuéntanos de tu proyecto", "Con esto preparamos un primer estimado de tu remodelación.");
 
     var hero = el("div", "quote-hero-panel");
-    hero.innerHTML = '<svg viewBox="0 0 300 112" preserveAspectRatio="none">' +
-      '<polygon points="42,0 300,0 300,112 0,112" fill="rgba(196,172,114,0.06)"/>' +
-      '<line x1="42" y1="0" x2="0" y2="112" stroke="#C4AC72" stroke-width="1.5"/>' +
-      '</svg><div class="hp-label">Arista · Espacios y Proyectos</div>';
+    hero.innerHTML = '<img class="photo" src="assets/proyecto-loft-altillo.jpg" alt="Loft remodelado por Arista en Medellín">' +
+      '<div class="hp-label">Arista · Espacios y Proyectos</div>';
     s.appendChild(hero);
 
     var grid = el("div", "form-grid");
